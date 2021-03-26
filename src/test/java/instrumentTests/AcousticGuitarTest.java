@@ -52,6 +52,16 @@ public class AcousticGuitarTest {
         assertEquals(6, acousticGuitar.getNoOfStrings());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("I sound like twanggg", acousticGuitar.play("twanggg"));
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(599, acousticGuitar.calculateMarkup(acousticGuitar.getCostPrice(), acousticGuitar.getSellingPrice()), 0.01);
+    }
+
 
 
 

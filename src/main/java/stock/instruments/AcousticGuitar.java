@@ -14,10 +14,10 @@ public class AcousticGuitar extends Instrument{
     }
 
     public String play(String sound) {
-        return null;
+        return "I sound like " + sound;
     }
 
     public double calculateMarkup(double costPrice, double sellingPrice) {
-        return 0;
+        return sellingPrice - costPrice;
     }
 }
