@@ -22,4 +22,17 @@ public class AcousticGuitarTest {
         assertEquals("Gibson Songwriter", acousticGuitar.getDescription());
     }
 
+    @Test
+    public void hasACostPrice(){
+        assertEquals(1900, acousticGuitar.getCostPrice(), 0.01);
+    }
+
+    @Test
+    public void hasASellingPrice(){
+        assertEquals(2499, acousticGuitar.getSellingPrice(), 0.01);
+    }
+
+
+
+
 }
