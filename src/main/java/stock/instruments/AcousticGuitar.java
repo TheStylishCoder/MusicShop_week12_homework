@@ -9,7 +9,9 @@ public class AcousticGuitar extends Instrument{
         this.noOfStrings = noOfStrings;
     }
 
-
+    public int getNoOfStrings() {
+        return noOfStrings;
+    }
 
     public String play(String sound) {
         return null;

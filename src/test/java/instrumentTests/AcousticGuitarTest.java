@@ -32,6 +32,26 @@ public class AcousticGuitarTest {
         assertEquals(2499, acousticGuitar.getSellingPrice(), 0.01);
     }
 
+    @Test
+    public void hasAMaterial(){
+        assertEquals("rosewood", acousticGuitar.getMaterial());
+    }
+
+    @Test
+    public void hasColour(){
+        assertEquals("brown", acousticGuitar.getColour());
+    }
+
+    @Test
+    public void hasInstrumentType(){
+        assertEquals(InstrumentType.GUITAR, acousticGuitar.getInstrumentType());
+    }
+
+    @Test
+    public void hasNoOfStrings(){
+        assertEquals(6, acousticGuitar.getNoOfStrings());
+    }
+
 
 
 

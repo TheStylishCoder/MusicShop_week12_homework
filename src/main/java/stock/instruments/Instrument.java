@@ -16,5 +16,15 @@ public abstract class Instrument extends StockItem implements IPlay {
         this.instrumentType = instrumentType;
     }
 
+    public String getMaterial() {
+        return material;
+    }
 
+    public String getColour() {
+        return colour;
+    }
+
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
+    }
 }
