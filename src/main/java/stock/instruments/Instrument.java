@@ -1,6 +1,7 @@
-package stock;
+package stock.instruments;
 
 import behaviours.IPlay;
+import stock.StockItem;
 
 public abstract class Instrument extends StockItem implements IPlay {
 
@@ -15,5 +16,5 @@ public abstract class Instrument extends StockItem implements IPlay {
         this.instrumentType = instrumentType;
     }
 
-    
+
 }
