@@ -13,4 +13,16 @@ public abstract class StockItem implements ISell {
         this.costPrice = costPrice;
         this.sellingPrice = sellingPrice;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getCostPrice() {
+        return costPrice;
+    }
+
+    public double getSellingPrice() {
+        return sellingPrice;
+    }
 }

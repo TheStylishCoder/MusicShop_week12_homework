@@ -5,6 +5,8 @@ import org.junit.Test;
 import stock.instruments.AcousticGuitar;
 import stock.instruments.InstrumentType;
 
+import static org.junit.Assert.assertEquals;
+
 public class AcousticGuitarTest {
 
     AcousticGuitar acousticGuitar;
