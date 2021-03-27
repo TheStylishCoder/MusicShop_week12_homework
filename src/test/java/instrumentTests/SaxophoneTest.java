@@ -12,53 +12,53 @@ public class SaxophoneTest {
     Saxophone saxophone;
 
     @Before
-    public void before(){
+    public void before() {
         saxophone = new Saxophone("Odyssey Premiere Eb Alto", 579, 749, "brass", "rose gold", InstrumentType.WOODWIND, "rubber");
 
     }
 
     @Test
-    public void hasADescription(){
-        assertEquals("Odyssey Premiere Eb Alto", saxophone .getDescription());
+    public void hasADescription() {
+        assertEquals("Odyssey Premiere Eb Alto", saxophone.getDescription());
     }
 
     @Test
-    public void hasACostPrice(){
-        assertEquals(579, saxophone .getCostPrice(), 0.01);
+    public void hasACostPrice() {
+        assertEquals(579, saxophone.getCostPrice(), 0.01);
     }
 
     @Test
-    public void hasASellingPrice(){
-        assertEquals(749, saxophone .getSellingPrice(), 0.01);
+    public void hasASellingPrice() {
+        assertEquals(749, saxophone.getSellingPrice(), 0.01);
     }
 
     @Test
-    public void hasAMaterial(){
-        assertEquals("brass", saxophone .getMaterial());
+    public void hasAMaterial() {
+        assertEquals("brass", saxophone.getMaterial());
     }
 
     @Test
-    public void hasColour(){
-        assertEquals("rose gold", saxophone .getColour());
+    public void hasColour() {
+        assertEquals("rose gold", saxophone.getColour());
     }
 
     @Test
-    public void hasInstrumentType(){
-        assertEquals(InstrumentType.WOODWIND, saxophone .getInstrumentType());
+    public void hasInstrumentType() {
+        assertEquals(InstrumentType.WOODWIND, saxophone.getInstrumentType());
     }
 
     @Test
-    public void hasMouthpieceMaterial(){
-        assertEquals("rubber", saxophone .getMouthpieceMaterial());
+    public void hasMouthpieceMaterial() {
+        assertEquals("rubber", saxophone.getMouthpieceMaterial());
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("I sound like whaa", saxophone .play("whaa"));
+    public void canPlay() {
+        assertEquals("I sound like whaa", saxophone.play("whaa"));
     }
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(170, saxophone .calculateMarkup(saxophone .getCostPrice(), saxophone .getSellingPrice()), 0.01);
+        assertEquals(170, saxophone .calculateMarkup(), 0.01);
     }
 }

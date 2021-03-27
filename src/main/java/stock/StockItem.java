@@ -25,4 +25,6 @@ public abstract class StockItem implements ISell {
     public double getSellingPrice() {
         return sellingPrice;
     }
+
+
 }

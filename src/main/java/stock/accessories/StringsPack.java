@@ -7,7 +7,8 @@ public class StringsPack extends Accessory {
 
     }
 
-    public double calculateMarkup(double costPrice, double sellingPrice) {
-        return sellingPrice - costPrice;
+
+    public double calculateMarkup() {
+        return getSellingPrice() - getCostPrice();
     }
 }

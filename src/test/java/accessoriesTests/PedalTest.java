@@ -32,7 +32,7 @@ public class PedalTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(27, pedal.calculateMarkup(pedal.getCostPrice(), pedal.getSellingPrice()), 0.01);
+        assertEquals(27, pedal.calculateMarkup(), 0.01);
     }
 
 }

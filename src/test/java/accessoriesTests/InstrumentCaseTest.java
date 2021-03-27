@@ -33,7 +33,7 @@ public class InstrumentCaseTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(30, instrumentCase.calculateMarkup(instrumentCase.getCostPrice(), instrumentCase.getSellingPrice()), 0.01);
+        assertEquals(30, instrumentCase.calculateMarkup(), 0.01);
     }
 
 }

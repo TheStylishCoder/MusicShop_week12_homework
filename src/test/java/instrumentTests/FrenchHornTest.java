@@ -59,6 +59,6 @@ public class FrenchHornTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(329, frenchHorn.calculateMarkup(frenchHorn.getCostPrice(), frenchHorn.getSellingPrice()), 0.01);
+        assertEquals(329, frenchHorn.calculateMarkup(), 0.01);
     }
 }

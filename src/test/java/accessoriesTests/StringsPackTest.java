@@ -32,6 +32,6 @@ public class StringsPackTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(1.10, stringsPack.calculateMarkup(stringsPack.getCostPrice(), stringsPack.getSellingPrice()), 0.01);
+        assertEquals(1.10, stringsPack.calculateMarkup(), 0.01);
     }
 }

@@ -59,7 +59,7 @@ public class AcousticGuitarTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(599, acousticGuitar.calculateMarkup(acousticGuitar.getCostPrice(), acousticGuitar.getSellingPrice()), 0.01);
+        assertEquals(599, acousticGuitar.calculateMarkup(), 0.01);
     }
 
 

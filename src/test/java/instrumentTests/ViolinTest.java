@@ -59,6 +59,6 @@ public class ViolinTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(28, violin.calculateMarkup(violin.getCostPrice(), violin.getSellingPrice()), 0.01);
+        assertEquals(28, violin.calculateMarkup(), 0.01);
     }
 }

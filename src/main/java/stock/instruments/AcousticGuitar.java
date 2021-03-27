@@ -17,7 +17,8 @@ public class AcousticGuitar extends Instrument{
         return "I sound like " + sound;
     }
 
-    public double calculateMarkup(double costPrice, double sellingPrice) {
-        return sellingPrice - costPrice;
+
+    public double calculateMarkup() {
+        return getSellingPrice() - getCostPrice();
     }
 }

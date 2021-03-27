@@ -31,4 +31,12 @@ public class MusicShop {
     public ISell removeFromStockList(){
         return this.stock.remove(0);
     }
+
+    public double calculateProfit(ArrayList<ISell> stock){
+        double total = 0;
+        for(ISell item : stock){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }
